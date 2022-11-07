@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
     <title>contact</title>
 </head>
 <body>
     <header>
-        <img src="/assets/img/jarditou_logo.jpg" width="300" alt="Logo jarditou" title="logo jarditou">
+        <img src="assets/img/jarditou_logo.jpg" width="300" alt="Logo jarditou" title="logo jarditou">
     <br>
-    <p id="slogan">La qualité depuis 70 ans</p>
+    <h1 id="slogan">La qualité depuis 70 ans</h1>
     <br>
     </header>
     <nav class="navi">
@@ -21,36 +21,30 @@
         <li><a href="contact.html">contact</a></li>
     </ul>
     </nav>
-    <img src="/assets/img/promotion.jpg" width="1000" alt="promotion" title="promotion" class="promo">
+    <img src="assets/img/promotion.jpg" width="1000" alt="promotion" title="promotion" class="promo">
     <fieldset>
-        <form action="http://bienvu.net/script.php" method="get">
-        <div>*Ces zones sont obligatoires*</div>
+        <form action="http://bienvu.net/script.php" method="get" id="formulaire">
+        <div>Ces zones sont obligatoires</div>
         <fieldset>
         <legend>vos coordonées</legend>
-        <label for="nom">Votre nom* :</label>
-             <input type="text" name="nom" id="nom">
+        <label for="nom">Votre nom* :</label><input type="text" name="nom" id="nom">
         <br>
-        <label for="prénom">Votre prénom* :</label>
-             <input type="text" name="prénom" id="prénom">
+        <label for="prénom">Votre prénom* :</label><input type="text" name="prénom" id="prenom">
         <br>
-        <label for="sexe">Sexe*</label>
-             <input type="radio" name="sexe" value="Féminin" id="sexe"> Féminin
-        <input type="radio" name="sexe" value="Masculin"> Masculin
+        <label for="sexe">Sexe</label><input type="radio" name="sexe" id="femme" value="Féminin"> Féminin
+        <input type="radio" name="sexe" id="homme" value="Masculin"> Masculin
         <br>
-        <Label for="date">Date de naissance*:</Label>
-             <input type="date" name="date" id="date">
+        <Label for="date">Date de naissance:</Label><input type="date" name="date" id="date">
         <br>
-        <label for="adresse">Adresse :</label>
-             <input type="text" name="adresse" id="adresse">
+        <label for="adresse">Adresse :</label><input type="text" name="adresse" id="adresse">
         <br>
-        <label for="ville">Ville :</label>
-             <input type="text" name="Ville" id="ville">
+        <label for="ville">Ville :</label><input type="text" name="Ville" id="ville">
         <br>
-        <label for="Email">Email* :</label><input type="email" placeholder="dave.loper@afpa.fr" id="Email">
+        <label for="Email">Email* :</label><input type="email" placeholder="dave.loper@afpa.fr" id="email">
         </fieldset>
         <fieldset>
         <legend>Votre demande</legend>
-        <label for="sujet">Sujet*</label>
+        <label for="sujet">Sujet</label>
         <select id="sujet" size="1"> 
             <option value="veuillez séléctionner un sujet" selected>veuillez séléctionner un sujet</option>
             <option value="Mes commandes">Mes commandes</option>
@@ -59,12 +53,12 @@
             <option value="Autres">Autres</option>
         </select>
         <br>
-        <label for="question">Votre question* :</label><textarea name="question" cols="18" rows="1" id="question"></textarea>
+        <label for="question">Votre question :</label><textarea name="question" id="question"cols="18" rows="1"></textarea>
         </fieldset>
-        <input type="checkbox" id="formulaire"> <label for="formulaire">*J'accepte le traitement informatique de ce formulaire </label>
+        <input type="checkbox" id="checkbox"> <label for="formulaire">*J'accepte le traitement informatique de ce formulaire</label>
         <br>
-        <input type="submit">
-        <button>Annuler</button>
+        <input type="submit" id="envoie">
+        <input type="reset">
         </form>
         </fieldset>
     <footer class="navi">
@@ -75,6 +69,6 @@
         </ul>
     </article>
     </footer>
-
+<script src="/assets/js/script.js"></script>
 </body>
 </html>
